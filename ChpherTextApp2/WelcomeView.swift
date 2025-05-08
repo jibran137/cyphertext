@@ -30,7 +30,7 @@ struct WelcomeView: View {
                     Spacer()
                 }
                 ZStack {
-                    Color.black.opacity(0.34)
+                    Color.black.opacity(0.37)
                         .frame(width: 300, height: 300)
                         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                     .shadow(color:Color.black.opacity(0.1),  radius: 10, x:0, y:10)
