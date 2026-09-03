@@ -9,11 +9,11 @@ Book*, built as a proof of concept while learning Swift.
 You pick a secret key (e.g. a name or word). The cipher alphabet starts with
 that key's letters, duplicates removed, then continues alphabetically from
 the letter *after* the key's last letter, skipping any letter already used
-and wrapping around to `a` once it passes `z`. So the key `GIBRAN` builds a
-cipher alphabet starting `g i b r a n`, then picks up right after `n` — at
-`o` — runs to `z`, wraps to `a`, and skips `a`, `b`, `g`, `i`, `n`, `r`
+and wrapping around to `a` once it passes `z`. So the key `JIBRAN` builds a
+cipher alphabet starting `j i b r a n`, then picks up right after `n` — at
+`o` — runs to `z`, wraps to `a`, and skips `a`, `b`, `i`, `j`, `n`, `r`
 wherever they'd otherwise repeat, filling in the rest: `o p q s t u v w x y
-z c d e f h j k l m`.
+z c d e f g h k l m`.
 
 Plaintext is then substituted letter-for-letter through that shifted
 alphabet to encode, and reversed to decode.
